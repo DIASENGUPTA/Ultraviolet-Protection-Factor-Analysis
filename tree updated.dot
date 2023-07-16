@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Weftcount(Ne) <= 25.0\nmse = 3210.6\nsamples = 23\nvalue = 38.2"] ;
+1 [label="Pickdensity(inch-1) <= 65.0\nmse = 6136.8\nsamples = 5\nvalue = 116.5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Enddensity(inch-1) <= 64.0\nmse = 0.9\nsamples = 2\nvalue = 16.7"] ;
+1 -> 2 ;
+3 [label="mse = 0.0\nsamples = 1\nvalue = 18.0"] ;
+2 -> 3 ;
+4 [label="mse = 0.0\nsamples = 1\nvalue = 16.0"] ;
+2 -> 4 ;
+5 [label="Enddensity(inch-1) <= 82.5\nmse = 250.2\nsamples = 3\nvalue = 176.4"] ;
+1 -> 5 ;
+6 [label="mse = 108.0\nsamples = 2\nvalue = 170.0"] ;
+5 -> 6 ;
+7 [label="mse = 0.0\nsamples = 1\nvalue = 202.0"] ;
+5 -> 7 ;
+8 [label="Enddensity(inch-1) <= 70.0\nmse = 122.1\nsamples = 18\nvalue = 15.8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Warpcount(Ne) <= 25.0\nmse = 10.2\nsamples = 8\nvalue = 9.2"] ;
+8 -> 9 ;
+10 [label="mse = 0.0\nsamples = 1\nvalue = 17.0"] ;
+9 -> 10 ;
+11 [label="mse = 5.9\nsamples = 7\nvalue = 8.6"] ;
+9 -> 11 ;
+12 [label="Weftcount(Ne) <= 35.0\nmse = 146.7\nsamples = 10\nvalue = 22.4"] ;
+8 -> 12 ;
+13 [label="mse = 91.4\nsamples = 5\nvalue = 29.1"] ;
+12 -> 13 ;
+14 [label="mse = 21.0\nsamples = 5\nvalue = 10.4"] ;
+12 -> 14 ;
+}
